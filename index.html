@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Low Tech</title>
+    <link rel="stylesheet" href="mvp.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TP Low Tech Web</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Instructions</h2>
+        <header>
+          <p>
+            Vous trouverez ci-dessous des composants réalisables uniquement en
+            HTML et CSS. <br />
+            A vous de trouver comment !
+          </p>
+          <i>
+            💡 Il vous suffit de regarder le code source de cette page pour
+            trouver la solution aux différents problèmes
+          </i>
+        </header>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Une liste déroulante avec autocompletion</h2>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez du côté de <code>datalist</code>
+            </details>
+          </i>
+        </header>
+        <aside>
+          <label for="myHouse">Rechercher une série TV :</label>
+          <input
+            list="tvshows"
+            id="myTvShow"
+            name="myTvShow"
+            placeholder="saisir un nom de série"
+          />
+          <datalist id="tvshows">
+            <option value="Breaking Bad"></option>
+            <option value="Mr Robot"></option>
+            <option value="Sherlock"></option>
+            <option value="Westworld"></option>
+            <option value="La casa de papel"></option>
+            <option value="Lupin"></option>
+            <option value="13 reasons why"></option>
+            <option value="Dexter"></option>
+          </datalist>
+        </aside>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Afficher ou masquer du contenu</h2>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez du côté de <code>details</code>
+            </details>
+          </i>
+        </header>
+        <aside>
+          <details open="">
+            <summary>Breaking Bad</summary>
+            <p>
+              Walter White, 50 ans, est professeur de chimie dans un lycée du
+              Nouveau-Mexique. Pour subvenir aux besoins de Skyler, sa femme
+              enceinte, et de Walt Junior, son fils handicapé, il est obligé de
+              travailler doublement. Son quotidien déjà morose devient carrément
+              noir lorsqu'il apprend qu'il est atteint d'un incurable cancer des
+              poumons. Les médecins ne lui donnent pas plus de deux ans à vivre.
+              Pour réunir rapidement beaucoup d'argent afin de mettre sa famille
+              à l'abri, Walter ne voit plus qu'une solution : mettre ses
+              connaissances en chimie à profit pour fabriquer et vendre du
+              crystal meth, une drogue de synthèse qui rapporte beaucoup. Il
+              propose à Jesse, un de ses anciens élèves devenu un petit dealer
+              de seconde zone, de faire équipe avec lui. Le duo improvisé met en
+              place un labo itinérant dans un vieux camping-car. Cette
+              association inattendue va les entraîner dans une série de
+              péripéties tant comiques que pathétiques.
+            </p>
+          </details>
+
+          <details>
+            <summary>Mr Robot</summary>
+            <p>
+              Elliot est un jeune programmeur anti-social qui souffre d'un
+              trouble du comportement qui le pousse à croire qu'il ne peut
+              rencontrer des gens qu'en les hackant. Il travaille pour une firme
+              spécialisée dans la cyber-sécurité mais un homme connu sous le nom
+              de Mr Robot l'approche un jour pour faire tomber une compagnie
+              surpuissante qui fait partie de celles qu'il doit justement
+              protéger...
+            </p>
+          </details>
+
+          <details>
+            <summary>Sherlock</summary>
+            <p>
+              Les aventures de Sherlock Holmes et de son acolyte de toujours, le
+              docteur Watson, sont transposées au XXIème siècle...
+            </p>
+          </details>
+
+          <details>
+            <summary>Westworld</summary>
+            <p>
+              A Westworld, un parc d'attractions dernier cri, les visiteurs
+              paient des fortunes pour revivre le frisson de la conquête de
+              l'Ouest. Dolores, Teddy et bien d'autres sont des androïdes à
+              apparence humaine créés pour donner l'illusion et offrir du
+              dépaysement aux clients. Pour ces derniers, Westworld est
+              l'occasion de laisser libre-cours à leurs fantasmes. Cet univers
+              bien huilé est mis en péril lorsqu'à la suite d'une mise à jour,
+              quelques robots commencent à adopter des comportements
+              imprévisibles, voire erratiques. En coulisses, l'équipe, qui tire
+              les ficelles de ce monde alternatif, s'inquiète de ces incidents
+              de plus en plus nombreux. Les enjeux du programme Westworld étant
+              énormes, la Direction ne peut se permettre une mauvaise publicité
+              qui ferait fuir ses clients. Que se passe-t-il réellement avec les
+              androïdes ré-encodés ?
+            </p>
+          </details>
+        </aside>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Selectionner une couleur</h2>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez dans les types d'<code>input</code>
+            </details>
+          </i>
+        </header>
+        <aside>
+          <label for="colorPicker">Choisissez une couleur :</label>
+          <input type="color" value="#e0ffee" id="colorPicker" />
+        </aside>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Bouton reset sur un formulaire</h2>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez dans les types d'<code>input</code>
+            </details>
+          </i>
+        </header>
+        <form>
+          <label for="firstname">Prénom :</label>
+          <input type="text" id="firstname" name="firstname" />
+          <label for="lastname">Nom :</label>
+          <input type="text" id="lastname" name="lastname" />
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Submit" />
+        </form>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Ajouter une croix pour effacer un champ de recherche</h2>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez dans les types d'<code>input</code>
+            </details>
+          </i>
+        </header>
+        <aside>
+          <label for="search">Recherche</label>
+          <input type="search" id="search" name="search" />
+        </aside>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Ajouter des groupes dans une liste déroulante</h2>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez du côté de <code>optgroup</code>
+            </details>
+          </i>
+        </header>
+        <aside>
+          <label for="framework">Choisissez un framework :</label>
+          <select if="framework">
+            <optgroup label="Frontend">
+              <option>Vue</option>
+              <option>React</option>
+              <option>Svelte</option>
+            </optgroup>
+            <optgroup label="Backend">
+              <option>Laravel</option>
+              <option>.NET</option>
+              <option>Django</option>
+            </optgroup>
+          </select>
+        </aside>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Grouper des champs de formulaire</h2>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez du côté de <code>fieldset</code>
+            </details>
+          </i>
+        </header>
+        <form>
+          <fieldset>
+            <legend>Qui êtes vous ?</legend>
+            <label for="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="firstname" />
+            <label for="lastname">Nom :</label>
+            <input type="text" id="lastname" name="lastname" />
+          </fieldset>
+          <fieldset>
+            <legend>Quel est votre langage favoris ?</legend>
+            <input type="radio" id="javascript" name="language" checked />
+            <label for="javascript">JavaScript</label>
+            <input type="radio" id="python" name="language" />
+            <label for="python">Python</label>
+            <input type="radio" id="other" name="language" />
+            <label for="other">Autre</label>
+          </fieldset>
+        </form>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Un défilement maîtrisé</h2>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez du côté de <code>scroll-snap</code>
+            </details>
+          </i>
+        </header>
+        <aside>
+          <style>
+            .carousel {
+              display: flex;
+              overflow-x: auto;
+              scroll-snap-type: x mandatory;
+            }
+
+            .carousel_item {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex: 0 0 300px;
+              height: 150px;
+              scroll-snap-align: start;
+            }
+          </style>
+          <div class="carousel">
+            <div class="carousel_item" style="background-color: #f1c2c6">
+              Couleur #f1c2c6
+            </div>
+            <div class="carousel_item" style="background-color: #dac2f1">
+              Couleur #dac2f1
+            </div>
+            <div class="carousel_item" style="background-color: #ccf1c2">
+              Couleur #ccf1c2
+            </div>
+            <div class="carousel_item" style="background-color: #c2e9f1">
+              Couleur #c2e9f1
+            </div>
+            <div class="carousel_item" style="background-color: #f1ebc2">
+              Couleur #f1ebc2
+            </div>
+          </div>
+        </aside>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2>Des filtres photo avec CSS</h2>
+          <p>
+            L'adresse de l'image exemple est
+            <code
+              >https://images.unsplash.com/photo-1546948630-1149ea60dc86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80</code
+            >
+          </p>
+          <i>
+            <details>
+              <summary>💡 Indice</summary>
+              cherchez du côté de <code>filter</code>
+            </details>
+          </i>
+        </header>
+        <aside>
+          <style>
+            .filter1 img {
+              filter: grayscale(90%) sepia(13%) saturate(700%);
+            }
+            .filter2 img {
+              filter: hue-rotate(-40deg);
+            }
+            .filter3 img {
+              filter: contrast(170%) saturate(80%) blur(1px);
+            }
+          </style>
+          <div>
+            <h1>Original Image:</h1>
+            <img
+              src="https://images.unsplash.com/photo-1546948630-1149ea60dc86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+            />
+          </div>
+          <h1>Filtered Images:</h1>
+          <div class="filter1">
+            <img
+              src="https://images.unsplash.com/photo-1546948630-1149ea60dc86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+            />
+          </div>
+          <div class="filter2">
+            <img
+              src="https://images.unsplash.com/photo-1546948630-1149ea60dc86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+            />
+          </div>
+          <div class="filter3">
+            <img
+              src="https://images.unsplash.com/photo-1546948630-1149ea60dc86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+            />
+          </div>
+        </aside>
+        <hr />
+      </section>
+      <section>
+        <header>
+          <h2></h2>
+        </header>
+      </section>
+    </main>
+
+    <details
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: lightsteelblue;
+      "
+    >
+      <summary>🧪 Cliquer ici pour faire apparaître l'éditeur</summary>
+      <div
+        style="
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          display: flex;
+          height: 40%;
+          background-color: white;
+        "
+        oninput="i.srcdoc=h.value+'<style>'+c.value+'</style>'"
+      >
+        <textarea
+          style="min-width: 30%; height: 100%"
+          placeholder="HTML"
+          id="h"
+        ></textarea>
+        <textarea
+          style="min-width: 30%; height: 100%"
+          placeholder="CSS"
+          id="c"
+        ></textarea>
+        <iframe style="min-width: 40%; height: 100%" id="i"></iframe>
+      </div>
+    </details>
+  </body>
+</html>
