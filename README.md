@@ -2,6 +2,8 @@
 
 Pour revoir les slides : https://acailly.github.io/confs/low-tech-web/lowtechweb-imt-atlantique-2022.pdf
 
+Pour la version en ligne du TP : https://acailly.github.io/tp-lowtechweb/
+
 ## On peut faire ça en HTML/CSS ?
 
 Aujourd'hui il est tellement simple d'ajouter une dépendance JavaScript à un projet qu'on le fait parfois sans même se demander s'il n'est pas déjà possible de le faire sans cette dépendance
