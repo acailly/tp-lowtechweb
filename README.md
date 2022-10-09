@@ -1,6 +1,6 @@
 # TP Low Tech Web
 
-Pour revoir les slides : https://acailly.github.io/confs/low-tech-web/lowtechweb-imt-atlantique-2022.pdf
+Pour revoir les slides : https://acailly.github.io/confs/low-tech-web/lowtechweb-imt-atlantique-2023.pdf
 
 Pour la version en ligne du TP : https://acailly.github.io/tp-lowtechweb/
 
